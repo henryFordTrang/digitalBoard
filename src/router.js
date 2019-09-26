@@ -4,6 +4,7 @@ import henry from './views/home.vue';
 import refresh from './views/refresh.vue';
 import shapes from './views/shapes.vue';
 import video from './views/video.vue';
+import portable from './views/portable.vue';
 import table from './views/table.vue';
 import divTable from './views/divTable.vue';
 import MenuTab from './views/MenuTab.vue';
@@ -24,6 +25,13 @@ export default new Router({
                 mainKeep: henry,
                 menuTab: MenuTab,
                 
+              }
+        },
+        {
+            path:'/portable',
+            name:'portable',
+            components: {
+                mainKeep: portable
               }
         },
 
@@ -129,7 +137,7 @@ export default new Router({
             path:'*',
             name:'error',
             components: {
-                mainKeep: table,
+                mainKeep: portable,
                 //menuTab: MenuTab
               }
         }

@@ -20,6 +20,8 @@ import pageScroll from './components/pageScroll.vue'
 import echarts from "echarts";
 import customized from './views/cstComponent/switch.vue';
 import pic from './views/cstComponent/pic.vue';
+import VueDND from 'awe-dnd';
+
 // import vConsole from "vconsole";
 // new vConsole;
 Vue.prototype.$share = mshare;
@@ -31,7 +33,7 @@ Vue.prototype.$echarts = echarts;
 //   baseURL:'http://192.168.10.25:8080/web-bpzx/bpzx/replay'
 // })
 
-
+Vue.use(VueDND);
 Vue.use(Button)
    .use(NavBar)
    .use(Tabbar)
